@@ -3,23 +3,35 @@ use super::material::*;
 use super::WoodSeller;
 
 pub struct PRonicWoodSeller;
+
+impl PRonicWoodSeller {
+    pub fn new() -> Self {
+        Self
+    }
+}
+
 impl WoodSeller for PRonicWoodSeller {
-    fn name() -> String {
+    fn name(&self) -> String {
         "p-ronic.cz".to_owned()
     }
 
-    fn pages() -> Result<Vec<String>> {
+    fn pages(&self) -> Result<Vec<String>> {
         Ok(vec![
             "https://www.p-ronic.com/sparovky/borovice.html".to_owned(),
-            "https://www.p-ronic.com/sparovky/smrk.html".to_owned(),
+            "http://www.p-ronic.com/sparovky/smrk.html".to_owned(),
             "https://www.p-ronic.com/sparovky/dub.html".to_owned(),
-            "https://www.p-ronic.com/sparovky/buk.html".to_owned(),
+            "http://www.p-ronic.com/sparovky/buk.html".to_owned(),
             "https://www.p-ronic.com/sparovky/jasan.html".to_owned(),
         ])
     }
 
-    fn fetch_page(url: &String) -> Result<Vec<Material>> {
-        let response = reqwest::blocking::get(url)?;
+    fn fetch_page(&self, url: &String) -> Result<Vec<Material>> {
+
+        let client = reqwest::blocking::Client::builder()
+            .pool_max_idle_per_host(0)
+            .build()?;
+        
+        let response = client.get(url);
         let text = response.text()?;
 
         let document = scraper::Html::parse_document(&text);
@@ -60,8 +72,17 @@ impl WoodSeller for PRonicWoodSeller {
                     .parse()
                     .unwrap_or(0.);
 
+                let species = match name.split("-").last().unwrap().trim() {
+                    "SMRK" => WoodSpecies::Spruce,
+                    "BOR" => WoodSpecies::Pine,
+                    "DUB" => WoodSpecies::Oak,
+                    "JASAN" => WoodSpecies::Ash,
+                    "BUK" => WoodSpecies::Beech,
+                    s => WoodSpecies::Other(s.to_string())
+                };
+                
                 return Some(Material::new(
-                    name, quality, thickness, width, length, price,
+                    "p-ronic.cz".to_owned(), name, species, quality, thickness, width, length, price,
                 ));
             })
             .flatten()
@@ -69,6 +90,4 @@ impl WoodSeller for PRonicWoodSeller {
 
         return Ok(materials);
     }
-
-
 }
