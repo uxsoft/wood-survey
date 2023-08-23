@@ -2,7 +2,7 @@ use std::fmt::Formatter;
 use tabled::Tabled;
 use serde::Serialize;
 
-#[derive(Serialize)]
+#[derive(Serialize, Clone)]
 pub enum WoodSpecies {
     Oak,
     Beech,
@@ -25,7 +25,7 @@ impl std::fmt::Display for WoodSpecies {
     }
 }
 
-#[derive(Tabled, Serialize)]
+#[derive(Tabled, Serialize, Clone)]
 pub struct Material {
     pub seller: String,
     pub name: String,

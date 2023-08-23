@@ -10,7 +10,7 @@ pub use madero::MaderoWoodSeller;
 pub trait WoodSeller {
     fn name(&self) -> String;
     fn pages(&self) -> Result<Vec<String>>;
-    fn fetch_page(&self, url: &String) -> Result<Vec<Material>>;
+    fn fetch_page(&self, url: &str) -> Result<Vec<Material>>;
     fn fetch(&self) -> Result<Vec<Material>> {
         let materials: Vec<Material> = self.pages()?
             .iter()

@@ -25,13 +25,9 @@ impl WoodSeller for PRonicWoodSeller {
         ])
     }
 
-    fn fetch_page(&self, url: &String) -> Result<Vec<Material>> {
+    fn fetch_page(&self, url: &str) -> Result<Vec<Material>> {
 
-        let client = reqwest::blocking::Client::builder()
-            .pool_max_idle_per_host(0)
-            .build()?;
-        
-        let response = client.get(url);
+        let response = reqwest::blocking::get(url)?;
         let text = response.text()?;
 
         let document = scraper::Html::parse_document(&text);
@@ -45,7 +41,15 @@ impl WoodSeller for PRonicWoodSeller {
                 let cells = e.select(&cell_selector).collect::<Vec<_>>();
 
                 let name = cells.get(0)?.text().collect::<String>().trim().to_string();
-                let quality = cells.get(1)?.text().collect::<String>().trim().to_string();
+                
+                let quality = cells
+                    .get(1)?
+                    .text()
+                    .collect::<String>()
+                    .trim()
+                    .replace("-", "")
+                    .to_string();
+                
                 let thickness = cells
                     .get(2)?
                     .text()
