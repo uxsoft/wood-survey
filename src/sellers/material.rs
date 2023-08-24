@@ -9,6 +9,8 @@ pub enum WoodSpecies {
     Spruce,
     Pine,
     Ash,
+    Walnut,
+    Birch,
     Other(String)
 }
 
@@ -20,6 +22,8 @@ impl std::fmt::Display for WoodSpecies {
             WoodSpecies::Spruce => write!(f, "Spruce"),
             WoodSpecies::Pine => write!(f, "Pine"),
             WoodSpecies::Ash => write!(f, "Ash"),
+            WoodSpecies::Walnut => write!(f, "Walnut"),
+            WoodSpecies::Birch => write!(f, "Birch"),
             WoodSpecies::Other(name) => write!(f, "Other ({})", name) 
         }
     }

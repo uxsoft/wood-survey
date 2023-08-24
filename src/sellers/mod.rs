@@ -1,11 +1,14 @@
 mod material;
 mod p_ronic;
 mod madero;
+mod drevoma;
+mod scraper_extensions;
 
 use anyhow::Result;
 pub use material::*;
 pub use p_ronic::PRonicWoodSeller;
 pub use madero::MaderoWoodSeller;
+pub use drevoma::DrevomaWoodSeller;
 
 pub trait WoodSeller {
     fn name(&self) -> String;

@@ -55,12 +55,12 @@ fn crawl_all_together() -> anyhow::Result<()> {
 
 // #[tokio::main]
 fn main() -> anyhow::Result<()> {
-    // let seller = MaderoWoodSeller::new();
-    // let materials = seller.fetch()?;
-    // let table = Table::new(materials);
-    // println!("{}", table);
+    let seller = DrevomaWoodSeller::new();
+    let materials = seller.fetch()?;
+    let table = Table::new(materials);
+    println!("{}", table);
     
-    crawl_all_together()?;
+    // crawl_all_together()?;
 
     Ok(())
 }
