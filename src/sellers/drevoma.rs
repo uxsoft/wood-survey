@@ -3,7 +3,6 @@ use super::material::*;
 use super::WoodSeller;
 use super::scraper_extensions::*;
 use regex::Regex;
-use scraper::Selector;
 
 pub struct DrevomaWoodSeller;
 
@@ -27,9 +26,11 @@ impl WoodSeller for DrevomaWoodSeller {
     }
 
     fn fetch_page(&self, url: &str) -> Result<Vec<Material>> {
+        let currency = crate::currency::Currency::new();
+        
         let response = reqwest::blocking::get(url)?;
         let text = response.text()?;
-
+        
         let document = scraper::Html::parse_document(&text);
 
         let dimensions_regex = Regex::new(r"(?<t>[\d]+)x(?<w>[\d]+)x(?<l>[\d]+)(\s)?mm").unwrap();
@@ -40,22 +41,24 @@ impl WoodSeller for DrevomaWoodSeller {
                 let name = e.select_string("a");
                 let name_split = name.split(" ").collect::<Vec<_>>();
 
-                let quality = name_split.get(5).unwrap_or(&"").to_string();
+
+                let (_, quality) = name.split_once("mm").unwrap();
+                let quality = quality.trim().to_string();
 
                 let dimensions = dimensions_regex.captures(&name).unwrap();
                 let thickness = dimensions["t"].parse().unwrap();
                 let width = dimensions["w"].parse().unwrap();
                 let length = dimensions["l"].parse().unwrap();
 
-                let price_s = e.select(&Selector::parse("div").unwrap())
-                    .collect::<Vec<_>>()
-                    .first().unwrap()
-                    .text()
-                    .collect::<String>();
+                let kind = match name_split.get(0).unwrap() {
+                    &"Preglejka" => WoodType::Plywood,
+                    &"Škárovka" => WoodType::Board,
+                    &t => WoodType::Other(t.to_string())
+                };
 
                 let prices = e.select_string("div");
-                let (dph, no_dph) = prices.split_once("€").unwrap();
-                let price = dph.replace(",", ".").trim().parse().unwrap();
+                let (dph, _) = prices.split_once("€").unwrap();
+                let price : f32 = dph.replace(",", ".").trim().parse().unwrap();
 
                 let species = match name_split.get(2).unwrap() {
                     &"Dub" => WoodSpecies::Oak,
@@ -63,13 +66,15 @@ impl WoodSeller for DrevomaWoodSeller {
                     &"Borovica" => WoodSpecies::Pine,
                     &"Orech" => WoodSpecies::Walnut,
                     &"Buk" => WoodSpecies::Beech,
-                    &"Breza" => WoodSpecies::Birch,
-                    &"Jaseň" => WoodSpecies::Ash,
+                    &"Javor" => WoodSpecies::Maple,
+                    &"Breza" | _ if name.contains("Breza") => WoodSpecies::Birch,
+                    &"Jaseň" | _ if name.contains("Jaseň") => WoodSpecies::Ash,
+                    &"Topoľ" | _ if name.contains("Topoľ") => WoodSpecies::Poplar,
                     s => WoodSpecies::Other(s.to_string())
                 };
 
                 return Some(Material::new(
-                    "madero.sk".to_owned(), name, species, quality, thickness, width, length, price,
+                    "drevoma.sk".to_owned(), kind, name, species, quality, thickness, width, length, price  * currency.eur(),
                 ));
             })
             .flatten()

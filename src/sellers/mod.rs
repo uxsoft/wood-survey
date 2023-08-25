@@ -9,7 +9,7 @@ pub use material::*;
 pub use p_ronic::PRonicWoodSeller;
 pub use madero::MaderoWoodSeller;
 pub use drevoma::DrevomaWoodSeller;
-
+pub use super::currency::*;
 pub trait WoodSeller {
     fn name(&self) -> String;
     fn pages(&self) -> Result<Vec<String>>;

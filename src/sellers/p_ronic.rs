@@ -18,9 +18,9 @@ impl WoodSeller for PRonicWoodSeller {
     fn pages(&self) -> Result<Vec<String>> {
         Ok(vec![
             "https://www.p-ronic.com/sparovky/borovice.html".to_owned(),
-            "http://www.p-ronic.com/sparovky/smrk.html".to_owned(),
+            "https://www.p-ronic.com/sparovky/smrk.html".to_owned(),
             "https://www.p-ronic.com/sparovky/dub.html".to_owned(),
-            "http://www.p-ronic.com/sparovky/buk.html".to_owned(),
+            "https://www.p-ronic.com/sparovky/buk.html".to_owned(),
             "https://www.p-ronic.com/sparovky/jasan.html".to_owned(),
         ])
     }
@@ -86,7 +86,7 @@ impl WoodSeller for PRonicWoodSeller {
                 };
                 
                 return Some(Material::new(
-                    "p-ronic.cz".to_owned(), name, species, quality, thickness, width, length, price,
+                    "p-ronic.cz".to_owned(), WoodType::Board, name, species, quality, thickness, width, length, price,
                 ));
             })
             .flatten()

@@ -11,6 +11,8 @@ pub enum WoodSpecies {
     Ash,
     Walnut,
     Birch,
+    Poplar,
+    Maple,
     Other(String)
 }
 
@@ -24,7 +26,32 @@ impl std::fmt::Display for WoodSpecies {
             WoodSpecies::Ash => write!(f, "Ash"),
             WoodSpecies::Walnut => write!(f, "Walnut"),
             WoodSpecies::Birch => write!(f, "Birch"),
+            WoodSpecies::Poplar => write!(f, "Poplar"),
+            WoodSpecies::Maple => write!(f, "Maple"),
             WoodSpecies::Other(name) => write!(f, "Other ({})", name) 
+        }
+    }
+}
+
+#[derive(Serialize, Clone)]
+pub enum WoodType {
+    Board,
+    Plywood,
+    OSB,
+    MDF,
+    Plank,
+    Other(String)
+}
+
+impl std::fmt::Display for WoodType {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        match self {
+            WoodType::Board => write!(f, "Board"),
+            WoodType::Plywood => write!(f, "Plywood"),
+            WoodType::OSB => write!(f, "OSB"),
+            WoodType::MDF => write!(f, "MDF"),
+            WoodType::Plank => write!(f, "Plank"),
+            WoodType::Other(name) => write!(f, "Other ({})", name)
         }
     }
 }
@@ -32,6 +59,7 @@ impl std::fmt::Display for WoodSpecies {
 #[derive(Tabled, Serialize, Clone)]
 pub struct Material {
     pub seller: String,
+    pub kind: WoodType,
     pub name: String,
     pub species: WoodSpecies,
     pub quality: String,
@@ -44,12 +72,13 @@ pub struct Material {
 }
 
 impl Material {
-    pub fn new(seller: String, name: String, species: WoodSpecies, quality: String, thickness: u32, width: u32, length: u32, price: f32) -> Material {
+    pub fn new(seller: String, kind: WoodType, name: String, species: WoodSpecies, quality: String, thickness: u32, width: u32, length: u32, price: f32) -> Material {
         let area = (width as f32) / 1000. * (length as f32) / 1000.;
         let norm_price = price / area;
 
         Material {
             seller,
+            kind,
             name,
             species,
             quality,

@@ -1,4 +1,5 @@
 mod sellers;
+mod currency;
 
 use std::path::Path;
 use sellers::*;
@@ -38,6 +39,7 @@ fn crawl_all_together() -> anyhow::Result<()> {
     let sellers: Vec<Box<dyn WoodSeller>> = vec![
         Box::new(PRonicWoodSeller::new()),
         Box::new(MaderoWoodSeller::new()),
+        Box::new(DrevomaWoodSeller::new())
     ];
 
     let master_materials: Vec<Material> = sellers
@@ -55,12 +57,12 @@ fn crawl_all_together() -> anyhow::Result<()> {
 
 // #[tokio::main]
 fn main() -> anyhow::Result<()> {
-    let seller = DrevomaWoodSeller::new();
-    let materials = seller.fetch()?;
-    let table = Table::new(materials);
-    println!("{}", table);
-    
-    // crawl_all_together()?;
+    // let seller = DrevomaWoodSeller::new();
+    // let materials = seller.fetch()?;
+    // let table = Table::new(materials);
+    // println!("{}", table);
+    // 
+    crawl_all_together()?;
 
     Ok(())
 }

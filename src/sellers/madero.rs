@@ -13,6 +13,8 @@ impl MaderoWoodSeller {
 }
 
 fn parse_doc(document: scraper::Html, quality: String) -> Result<Vec<Material>> {
+    let currency = crate::currency::Currency::new();
+    
     let materials = document
         .select(&Selector::parse(".product-grid .__content").unwrap())
         .map(|e| -> Option<Material> {
@@ -34,7 +36,7 @@ fn parse_doc(document: scraper::Html, quality: String) -> Result<Vec<Material>> 
                 .trim_end_matches("€")
                 .replace(",", ".")
                 .parse()
-                .unwrap_or(0.) * 24.01;
+                .unwrap_or(0.) * currency.eur();
 
             let species = match name.split(" ").collect::<Vec<_>>().get(0).unwrap().trim() {
                 "bk" => WoodSpecies::Beech,
@@ -43,7 +45,7 @@ fn parse_doc(document: scraper::Html, quality: String) -> Result<Vec<Material>> 
             };
 
             return Some(Material::new(
-                "madero.eu".to_owned(), name, species, quality.clone(), thickness, width, length, price,
+                "madero.eu".to_owned(), WoodType::Board, name, species, quality.clone(), thickness, width, length, price,
             ));
         })
         .flatten()
