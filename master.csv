@@ -1,0 +1,342 @@
+seller,kind,name,species,quality,thickness,width,length,price,area_m2,price_per_m2
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,18,1220,2500,1964.0,3.05,643.93445
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,18,300,1200,238.0,0.36,661.1111
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,18,300,2000,396.0,0.6,660.0
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,18,300,2400,475.0,0.72,659.72217
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,18,400,1200,318.0,0.48,662.5
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,18,400,2000,528.0,0.8,660.0
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,18,400,2400,633.0,0.96,659.375
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,18,400,800,212.0,0.32,662.5
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,28,300,1200,370.0,0.36,1027.7777
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,28,300,2000,615.0,0.6,1025.0
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,28,300,2400,737.0,0.72,1023.6111
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,28,300,800,246.0,0.24000001,1025.0
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,28,400,1200,492.0,0.48,1025.0
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,28,400,800,328.0,0.32,1025.0
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,40,300,1200,528.0,0.36,1466.6666
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,40,300,2000,880.0,0.6,1466.6666
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,40,300,2400,1056.0,0.72,1466.6666
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,40,300,800,353.0,0.24000001,1470.8333
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,40,400,1200,704.0,0.48,1466.6667
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,40,400,2000,1173.0,0.8,1466.25
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,40,400,2400,1409.0,0.96,1467.7084
+p-ronic.cz,Board,Spárovka - BOR,Pine,A/B,40,400,800,470.0,0.32,1468.75
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,20,650,3000,4141.0,1.9499999,2123.5898
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,20,650,2900,4003.0,1.8849999,2123.6077
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,20,650,2800,3865.0,1.8199999,2123.6265
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,20,650,2700,3727.0,1.7549999,2123.647
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,20,650,2600,3589.0,1.6899998,2123.669
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,20,650,2500,3422.0,1.625,2105.8462
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,20,650,2400,3284.0,1.56,2105.1282
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,20,650,2300,3148.0,1.495,2105.6855
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,20,650,2200,3011.0,1.43,2105.5945
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,20,650,2100,2874.0,1.365,2105.4944
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,20,650,2000,2319.0,1.3,1783.8462
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,40,650,900,2331.0,0.585,3984.6155
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,40,650,1500,3885.0,0.97499996,3984.6155
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,40,650,1400,3626.0,0.90999997,3984.6155
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,40,650,1300,3367.0,0.8449999,3984.6157
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,40,650,1200,3108.0,0.78,3984.6155
+p-ronic.cz,Board,Spárovka - DUB,Oak,Rustik,40,650,1000,2590.0,0.65,3984.6155
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,820,1700,7138.0,1.394,5120.516
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,820,1600,6884.0,1.312,5246.951
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,820,1500,6595.0,1.23,5361.7886
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,820,1400,6401.0,1.148,5575.784
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,725,2500,10999.0,1.8125,6068.4136
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,900,3163.0,0.594,5324.916
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,3000,13047.0,1.9800001,6589.3936
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,2900,12284.0,1.9140002,6417.972
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,2800,11885.0,1.8480002,6431.2764
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,2700,11448.0,1.7820001,6424.242
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,2600,11030.0,1.7160001,6427.739
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,2500,10612.0,1.6500001,6431.5146
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,2400,10194.0,1.5840001,6435.6055
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,2300,9749.0,1.518,6422.266
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,2200,9305.0,1.452,6408.4023
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,2100,8984.0,1.386,6481.9624
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,2000,8495.0,1.32,6435.606
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,1900,7280.0,1.254,5805.423
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,1800,6948.0,1.188,5848.485
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,1700,6508.0,1.122,5800.3564
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,1600,6129.0,1.056,5803.9775
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,1500,5750.0,0.99000007,5808.0806
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,1400,5358.0,0.9240001,5798.7007
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,1300,4822.0,0.85800004,5620.0464
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,1200,4340.0,0.79200006,5479.7974
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,1100,3905.0,0.726,5378.7876
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,660,1000,3516.0,0.66,5327.2725
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,650,900,2600.0,0.585,4444.445
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,650,2500,9862.0,1.625,6068.923
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,40,625,2500,9483.0,1.5625,6069.12
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,26,650,800,1376.0,0.52,2646.154
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,26,650,2200,4755.0,1.43,3325.175
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,26,650,1900,3398.0,1.235,2751.417
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,26,650,1800,3219.0,1.17,2751.2822
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,26,650,1700,3040.0,1.105,2751.131
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,26,650,1600,2862.0,1.04,2751.923
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,26,650,1500,2683.0,0.97499996,2751.795
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,26,650,1400,2504.0,0.90999997,2751.6484
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,26,650,1300,2325.0,0.8449999,2751.4795
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,26,650,1200,2074.0,0.78,2658.9744
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,26,650,1100,1892.0,0.715,2646.154
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,26,650,1000,1720.0,0.65,2646.154
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,25,650,1800,3269.0,1.17,2794.017
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,25,650,1700,3087.0,1.105,2793.665
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,20,650,900,1117.0,0.585,1909.4017
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,20,650,2900,5027.0,1.8849999,2666.8438
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,20,650,2800,4853.0,1.8199999,2666.4836
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,20,650,2200,3522.0,1.43,2462.9373
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,20,650,1900,2767.0,1.235,2240.4858
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,20,650,1800,2621.0,1.17,2240.1711
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,20,650,1700,2475.0,1.105,2239.8188
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,20,650,1600,2330.0,1.04,2240.3848
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,20,650,1500,2185.0,0.97499996,2241.0256
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,20,650,1400,2038.0,0.90999997,2239.5605
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,20,650,1300,1765.0,0.8449999,2088.7576
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,20,650,1200,1669.0,0.78,2139.7437
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B,20,650,1100,1365.0,0.715,1909.091
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B cink,20,650,3000,2679.0,1.9499999,1373.8462
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B cink,18,800,4000,5707.0,3.2,1783.4375
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B cink,20,650,4000,3675.0,2.6,1413.4615
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B cink,27,800,4000,8878.0,3.2,2774.375
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B cink,40,300,4000,4949.0,1.2,4124.1665
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B cink,40,650,3000,7730.0,1.9499999,3964.1028
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B cink,40,650,4000,9764.0,2.6,3755.3848
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B cink,40,650,4200,10212.0,2.73,3740.6594
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B cink,40,650,5000,12208.0,3.25,3756.3076
+p-ronic.cz,Board,Spárovka - DUB,Oak,A/B cink,40,900,5000,16903.0,4.5,3756.2222
+p-ronic.cz,Board,Spárovka - DUB,Oak,B/C cink,20,600,3000,2474.0,1.8000001,1374.4443
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,20,630,3000,4574.0,1.89,2420.106
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,25,670,2000,4294.0,1.34,3204.4775
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,25,670,2200,4586.0,1.474,3111.262
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,600,1400,3034.0,0.84000003,3611.9045
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,645,2000,4659.0,1.29,3611.628
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,650,1400,3287.0,0.90999997,3612.0881
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,650,1500,3520.0,0.97499996,3610.2566
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,650,1600,3756.0,1.04,3611.5386
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,650,1700,3991.0,1.105,3611.7646
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,650,1800,4226.0,1.17,3611.966
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,650,1900,4461.0,1.235,3612.1458
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,650,2000,4695.0,1.3,3611.5386
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,670,1900,4598.0,1.273,3611.9402
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,670,2000,4840.0,1.34,3611.9402
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,900,1700,5525.0,1.53,3611.111
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,900,1800,5851.0,1.62,3611.7283
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,900,1900,6176.0,1.71,3611.6958
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,900,2000,6853.0,1.8,3807.2224
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,900,2300,7880.0,2.07,3806.7634
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,900,2400,8222.0,2.16,3806.4814
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B,40,900,2900,9936.0,2.61,3806.8967
+p-ronic.cz,Board,Spárovka - JASAN,Ash,A/B cink AKCE,20,650,2500,1767.0,1.625,1087.3846
+madero.eu,Board,bk p 20_650_1000,Beech,A/B,20,650,1000,901.27795,0.65,1386.5815
+madero.eu,Board,bk p 20_650_1200,Beech,A/B,20,650,1200,1080.954,0.78,1385.8385
+madero.eu,Board,bk p 20_1250_1400,Beech,A/B,20,1250,1400,2428.524,1.75,1387.7279
+madero.eu,Board,bk p 20_1250_1700,Beech,A/B,20,1250,1700,3723.93,2.125,1752.4376
+madero.eu,Board,bk p 20_1250_2100,Beech,A/B,20,1250,2100,4602.024,2.625,1753.152
+madero.eu,Board,bk p 27_650_1000,Beech,A/B,27,650,1000,1089.648,0.65,1676.3815
+madero.eu,Board,bk p 27_650_1200,Beech,A/B,27,650,1200,1306.9979,0.78,1675.6384
+madero.eu,Board,bk p 27_1250_1400,Beech,A/B,27,1250,1400,2932.7761,1.75,1675.8721
+madero.eu,Board,bk p 27_1250_1700,Beech,A/B,27,1250,1700,4607.82,2.125,2168.3857
+madero.eu,Board,bk p 27_1250_2100,Beech,A/B,27,1250,2100,5694.57,2.625,2169.3599
+madero.eu,Board,bk p 40_650_1000,Beech,A/B,40,650,1000,1614.1859,0.65,2483.363
+madero.eu,Board,bk p 40_650_1200,Beech,A/B,40,650,1200,1935.864,0.78,2481.877
+madero.eu,Board,bk c 18_600_3950,Beech,A/B cink,18,600,3950,2570.5261,2.37,1084.6102
+madero.eu,Board,bk c 18_800_3950,Beech,A/B cink,18,800,3950,3428.3342,3.16,1084.9159
+madero.eu,Board,bk c 27_600_3950,Beech,A/B cink,27,600,3950,3692.052,2.37,1557.8279
+madero.eu,Board,bk c 27_800_3950,Beech,A/B cink,27,800,3950,4923.702,3.16,1558.1335
+madero.eu,Board,bk c 40_600_3950,Beech,A/B cink,40,600,3950,5193.216,2.37,2191.2305
+madero.eu,Board,bk c 40_800_3950,Beech,A/B cink,40,800,3950,6923.322,3.16,2190.9246
+madero.eu,Board,db c 18_600_3950,Oak,A/B cink,18,600,3950,4523.7783,2.37,1908.7673
+madero.eu,Board,db c 18_800_3950,Oak,A/B cink,18,800,3950,6033.6357,3.16,1909.3783
+madero.eu,Board,db c 25_600_3950,Oak,A/B cink,25,600,3950,5717.754,2.37,2412.5544
+madero.eu,Board,db c 25_800_3950,Oak,A/B cink,25,800,3950,7624.6377,3.16,2412.8599
+madero.eu,Board,db c 40_600_3950,Oak,A/B cink,40,600,3950,8902.656,2.37,3756.3953
+madero.eu,Board,db c 40_800_3950,Oak,A/B cink,40,800,3950,11867.31,3.16,3755.4775
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x1000 mm AB,Oak,AB,30,670,1000,2324.1958,0.67,3468.949
+drevoma.sk,Board,Škárovka Jaseň cink 40x800x4000 mm AB,Ash,AB,40,800,4000,9273.6,3.2,2897.9998
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x1600 mm AB,Oak,AB,30,670,1600,3998.274,1.072,3729.7332
+drevoma.sk,Board,Škárovka cinkovaná Čerešňa 22x650x4000 mm,Čerešňa,,22,650,4000,3287.2979,2.6,1264.3453
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x2000 mm AB,Oak,AB,30,670,2000,4997.8423,1.34,3729.733
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x2000 mm RUSTIC,Oak,RUSTIC,30,670,2000,4747.89,1.34,3543.2014
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x2200 mm RUSTIC,Oak,RUSTIC,30,670,2200,5222.6787,1.474,3543.2014
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x1000 mm AB,Oak,AB,40,670,1000,3021.1648,0.67,4509.201
+drevoma.sk,Board,Škárovka priebežná Buk 20x650x1400 mm AB,Beech,AB,20,650,1400,986.286,0.90999997,1083.8308
+drevoma.sk,Board,Škárovka priebežná Jaseň 40x660x3000 mm AB,Ash,AB,40,660,3000,7230.027,1.9800001,3651.5286
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x1600 mm RUSTIC,Oak,RUSTIC,20,670,1600,2527.539,1.072,2357.7788
+drevoma.sk,Board,Škárovka cinkovaná Dub 28x800x4000 mm AB/BC,Oak,AB/BC,28,800,4000,6063.0986,3.2,1894.7183
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x1000 mm AB,Oak,AB,20,670,1000,1549.4641,0.67,2312.633
+drevoma.sk,Board,Škárovka priebežná Smrek  40x1220x2500mm AB,Spruce,AB,40,1220,2500,4534.404,3.05,1486.6898
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x2200 mm RUSTIC,Oak,RUSTIC,40,670,2200,6794.361,1.474,4609.4717
+drevoma.sk,Board,Škárovka cinkovaná Buk 27x630x4100 mm,Beech,,27,630,4100,3519.621,2.583,1362.6099
+drevoma.sk,Board,Škárovka priebežná Smrek  18x1210x2500mm Štandard,Spruce,Štandard,18,1210,2500,1665.6255,3.025,550.62
+drevoma.sk,Board,Škárovka cinkovaná Čerešňa 40x600x4000 mm,Čerešňa,,40,600,4000,5425.0557,2.4,2260.4397
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x800 mm AB,Oak,AB,40,670,800,2412.585,0.536,4501.0913
+drevoma.sk,Board,Škárovka priebežná Borovica 28x1230x2500mm AB,Pine,AB,28,1230,2500,3475.4265,3.075,1130.22
+drevoma.sk,Board,Škárovka cinkovaná Javor 40x650x4000 mm A,Maple,A,40,650,4000,5334.735,2.6,2051.8213
+drevoma.sk,Board,Škárovka priebežná Borovica 40x1230x2500mm AB,Pine,AB,40,1230,2500,5079.469,3.075,1651.8599
+drevoma.sk,Board,Škárovka priebežná Jaseň 25x600x2400 mm AB,Ash,AB,25,600,2400,2973.348,1.44,2064.825
+drevoma.sk,Board,Škárovka priebežná Jaseň 25x650x2400 mm AB,Ash,AB,25,650,2400,3221.127,1.56,2064.825
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x1800 mm RUSTIC,Oak,RUSTIC,20,670,1800,2846.319,1.206,2360.132
+drevoma.sk,Board,Škárovka priebežná Jaseň 40x660x1000 mm AB,Ash,AB,40,660,1000,2180.5034,0.66,3303.793
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x2200 mm RUSTIC,Oak,RUSTIC,20,670,2200,3425.1946,1.474,2323.7412
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x2000 mm AB,Oak,AB,20,670,2000,3356.8499,1.34,2505.1118
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x1200 mm AB,Oak,AB,20,670,1200,1859.3085,0.804,2312.5728
+drevoma.sk,Board,Škárovka priebežná Borovica 27x1220x2500mm B,Pine,B,27,1220,2500,3358.782,3.05,1101.24
+drevoma.sk,Board,Škárovka priebežná Borovica 18x1220x2500mm AB,Pine,AB,18,1220,2500,2236.29,3.05,733.20984
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x2400 mm AB,Oak,AB,20,670,2400,3978.4712,1.608,2474.1736
+drevoma.sk,Board,Škárovka priebežná Jaseň 25x660x2800 mm AB,Ash,AB,25,660,2800,4217.556,1.8480002,2282.227
+drevoma.sk,Board,Škárovka cinkovaná Buk 19x630x4100 mm,Beech,,19,630,4100,2608.6829,2.583,1009.94305
+drevoma.sk,Board,Škárovka priebežná Smrek  27x1220x2500mm AB,Spruce,AB,27,1220,2500,3061.254,3.05,1003.6898
+drevoma.sk,Board,Škárovka priebežná Jaseň 25x660x1800 mm AB,Ash,AB,25,660,1800,2452.9155,1.188,2064.7437
+drevoma.sk,Board,Škárovka cinkovaná Dub 45x700x5000 mm AB,Oak,AB,45,700,5000,11867.31,3.5,3390.66
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x2400 mm RUSTIC,Oak,RUSTIC,20,670,2400,3798.312,1.608,2362.1343
+drevoma.sk,Board,Škárovka priebežná Buk 20x650x2000 mm AB,Beech,AB,20,650,2000,1612.4954,1.3,1240.3811
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x2000 mm AB,Oak,AB,40,670,2000,6508.425,1.34,4857.033
+drevoma.sk,Board,Škárovka priebežná Buk 33x650x1200 mm AB,Beech,AB,33,650,1200,1340.5664,0.78,1718.6749
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x2000 mm RUSTIC,Oak,RUSTIC,20,670,2000,3189.0076,1.34,2379.8564
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x800 mm AB,Oak,AB,20,670,800,1237.2045,0.536,2308.2173
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x1600 mm AB,Oak,AB,20,670,1600,2660.6055,1.072,2481.908
+drevoma.sk,Board,Škárovka priebežná Borovica 40x1220x2500mm B,Pine,B,40,1220,2500,4972.002,3.05,1630.1646
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x2400 mm RUSTIC,Oak,RUSTIC,40,670,2400,7417.431,1.608,4612.83
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x2400 mm AB,Oak,AB,40,670,2400,7807.695,1.608,4855.5312
+drevoma.sk,Board,Škárovka priebežná Jaseň 40x660x2200 mm AB,Ash,AB,40,660,2200,4798.605,1.452,3304.8242
+drevoma.sk,Board,Škárovka priebežná Jaseň 40x660x1400 mm AB,Ash,AB,40,660,1400,3052.56,0.9240001,3303.6362
+drevoma.sk,Board,Škárovka priebežná Smrek  40x1230x2500mm AB,Spruce,AB,40,1230,2500,3947.8005,3.075,1283.8375
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x1200 mm AB,Oak,AB,30,670,1200,2789.0835,0.804,3469.0093
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x1400 mm AB,Oak,AB,30,670,1400,3253.7292,0.938,3468.7944
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x1000 mm RUSTIC,Oak,RUSTIC,30,670,1000,2207.5515,0.67,3294.853
+drevoma.sk,Board,Škárovka priebežná Buk 33x650x1800 mm AB,Beech,AB,33,650,1800,2014.11,1.17,1721.4615
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x2200 mm AB,Oak,AB,20,670,2200,3605.3533,1.474,2445.9656
+drevoma.sk,Board,Škárovka priebežná Jaseň 20x660x1000 mm AB,Ash,AB,20,660,1000,1090.131,0.66,1651.7135
+drevoma.sk,Board,Škárovka cinkovaná Jaseň 25x660x4000 mm,Ash,,25,660,4000,4781.6997,2.64,1811.2499
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x1800 mm AB,Oak,AB,40,670,1800,5857.5825,1.206,4857.0337
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x2200 mm AB,Oak,AB,40,670,2200,7159.2676,1.474,4857.0337
+drevoma.sk,Board,Škárovka priebežná Buk 20x650x1200 mm AB,Beech,AB,20,650,1200,866.98505,0.78,1111.5193
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x800 mm RUSTIC,Oak,RUSTIC,20,670,800,1175.139,0.536,2192.4236
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x1200 mm RUSTIC,Oak,RUSTIC,20,670,1200,1766.0894,0.804,2196.6284
+drevoma.sk,Board,Škárovka cinkovaná Dub 18x800x4000 mm RUSTIC,Oak,RUSTIC,18,800,4000,3997.7908,3.2,1249.3096
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x1800 mm RUSTIC,Oak,RUSTIC,40,670,1800,5564.643,1.206,4614.132
+drevoma.sk,Board,Škárovka cinkovaná Dub 28x650x4000 mm AB/BC,Oak,AB/BC,28,650,4000,4926.3584,2.6,1894.7533
+drevoma.sk,Board,Škárovka cinkovaná Dub 40x800x4000 mm RUSTIC,Oak,RUSTIC,40,800,4000,8531.712,3.2,2666.16
+drevoma.sk,Board,Škárovka cinkovaná Dub 18x800x4000 mm AB/BC,Oak,AB/BC,18,800,4000,3997.7908,3.2,1249.3096
+drevoma.sk,Board,Škárovka cinkovaná Dub 18x650x4000 mm AB/BC,Oak,AB/BC,18,650,4000,3262.182,2.6,1254.6854
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x1000 mm RUSTIC,Oak,RUSTIC,40,670,1000,2870.2275,0.67,4283.9214
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x1800 mm AB,Oak,AB,20,670,1800,2996.2905,1.206,2484.4863
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x1200 mm RUSTIC,Oak,RUSTIC,40,670,1200,3444.273,0.804,4283.9214
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x1400 mm RUSTIC,Oak,RUSTIC,40,670,1400,4018.3184,0.938,4283.9214
+drevoma.sk,Board,Škárovka cinkovaná Agát 40x800x4000 mm,Agát,,40,800,4000,10015.488,3.2,3129.84
+drevoma.sk,Board,Škárovka priebežná Jaseň 25x660x2200 mm AB,Ash,AB,25,660,2200,2998.2224,1.452,2064.8914
+drevoma.sk,Board,Škárovka Jaseň cink 40x660x4000 mm AB,Ash,AB,40,660,4000,7650.7197,2.64,2897.9998
+drevoma.sk,Board,Škárovka priebežná Jaseň 25x660x1200 mm AB,Ash,AB,25,660,1200,1635.438,0.79200006,2064.9468
+drevoma.sk,Board,Škárovka priebežná Smrek  18x1230x2500mm AB,Spruce,AB,18,1230,2500,1777.9231,3.075,578.18634
+drevoma.sk,Board,Škárovka priebežná Smrek  28x1230x2500mm AB,Spruce,AB,28,1230,2500,2762.5186,3.075,898.38
+drevoma.sk,Board,Škárovka priebežná Jaseň 40x660x1600 mm AB,Ash,AB,40,660,1600,3488.7092,1.056,3303.702
+drevoma.sk,Board,Škárovka priebežná Jaseň 25x660x1600 mm AB,Ash,AB,25,660,1600,2180.5034,1.056,2064.8706
+drevoma.sk,Board,Škárovka priebežná Jaseň 25x660x1400 mm AB,Ash,AB,25,660,1400,1907.85,0.9240001,2064.7725
+drevoma.sk,Board,Škárovka priebežná Jaseň 40x660x2000 mm AB,Ash,AB,40,660,2000,4361.007,1.32,3303.793
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x1600 mm RUSTIC,Oak,RUSTIC,30,670,1600,3798.312,1.072,3543.2014
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x1800 mm RUSTIC,Oak,RUSTIC,30,670,1800,4273.101,1.206,3543.2017
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x1200 mm AB,Oak,AB,40,670,1200,3625.3977,0.804,4509.201
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x1400 mm AB,Oak,AB,40,670,1400,4229.631,0.938,4509.201
+drevoma.sk,Board,Škárovka cinkovaná Jaseň 25x660x4000 mm,Ash,,25,660,4000,4781.6997,2.64,1811.2499
+drevoma.sk,Board,Škárovka priebežná Borovica 18x800x2500mm AB,Pine,AB,18,800,2500,1466.3881,2.0,733.19403
+drevoma.sk,Board,Škárovka cinkovaná Buk 40x840x4100 mm,Beech,,40,840,4100,6398.7837,3.444,1857.9512
+drevoma.sk,Board,Škárovka priebežná Buk 20x650x1000 mm AB,Beech,AB,20,650,1000,704.4555,0.65,1083.7777
+drevoma.sk,Board,Škárovka priebežná Buk 20x650x2400 mm AB,Beech,AB,20,650,2400,1934.8981,1.56,1240.3193
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x1600 mm RUSTIC,Oak,RUSTIC,40,670,1600,4946.4033,1.072,4614.182
+drevoma.sk,Board,Škárovka priebežná Buk 33x650x2200 mm AB,Beech,AB,33,650,2200,2639.3535,1.43,1845.7018
+drevoma.sk,Board,Škárovka priebežná Buk 33x650x1400 mm AB,Beech,AB,33,650,1400,1566.369,0.90999997,1721.2847
+drevoma.sk,Board,Škárovka priebežná Jaseň 25x600x2200 mm AB,Ash,AB,25,600,2200,2725.569,1.32,2064.825
+drevoma.sk,Board,Škárovka priebežná Buk 33x650x1600 mm AB,Beech,AB,33,650,1600,1790.2394,1.04,1721.384
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x1400 mm AB,Oak,AB,20,670,1400,2196.9255,0.938,2342.138
+drevoma.sk,Board,Škárovka cinkovaná Dub 18x650x4000 mm RUSTIC,Oak,RUSTIC,18,650,4000,3262.182,2.6,1254.6854
+drevoma.sk,Board,Škárovka cinkovaná Buk 40x630x4100 mm,Beech,,40,630,4100,4775.904,2.583,1848.9756
+drevoma.sk,Board,Škárovka cinkovaná Orech americký 18x650x4000 mm,Walnut,,18,650,4000,4882.647,2.6,1877.9412
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x1800 mm AB,Oak,AB,30,670,1800,4497.9375,1.206,3729.633
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x2200 mm AB,Oak,AB,30,670,2200,5497.506,1.474,3729.6514
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x2400 mm AB,Oak,AB,30,670,2400,5997.4106,1.608,3729.733
+drevoma.sk,Board,Škárovka priebežná Jaseň 25x660x1000 mm AB,Ash,AB,25,660,1000,1362.7845,0.66,2064.825
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x1200 mm RUSTIC,Oak,RUSTIC,30,670,1200,2649.255,0.804,3295.093
+drevoma.sk,Board,Škárovka priebežná Buk 33x650x1000 mm AB,Beech,AB,33,650,1000,1118.8695,0.65,1721.3378
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x1400 mm RUSTIC,Oak,RUSTIC,30,670,1400,3090.717,0.938,3295.0073
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x1000 mm RUSTIC,Oak,RUSTIC,20,670,1000,1471.7009,0.67,2196.5686
+drevoma.sk,Board,Škárovka priebežná Dub 30x670x2400 mm RUSTIC,Oak,RUSTIC,30,670,2400,5697.468,1.608,3543.2012
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x1600 mm AB,Oak,AB,40,670,1600,5206.74,1.072,4857.0337
+drevoma.sk,Board,Škárovka priebežná Buk 20x650x1800 mm AB,Beech,AB,20,650,1800,1268.1165,1.17,1083.8602
+drevoma.sk,Board,Škárovka priebežná Buk 20x650x1600 mm AB,Beech,AB,20,650,1600,1127.322,1.04,1083.9635
+drevoma.sk,Board,Škárovka priebežná Jaseň 40x660x1200 mm AB,Ash,AB,40,660,1200,2616.6523,0.79200006,3303.8538
+drevoma.sk,Board,Škárovka priebežná Jaseň 25x660x2000 mm AB,Ash,AB,25,660,2000,2725.569,1.32,2064.825
+drevoma.sk,Board,Škárovka priebežná Jaseň 40x660x2800 mm AB,Ash,AB,40,660,2800,6746.061,1.8480002,3650.4656
+drevoma.sk,Board,Škárovka cinkovaná Dub 40x800x4000 mm AB/BC,Oak,AB/BC,40,800,4000,8531.712,3.2,2666.16
+drevoma.sk,Board,Škárovka priebežná Dub 20x670x1400 mm RUSTIC,Oak,RUSTIC,20,670,1400,2086.8015,0.938,2224.735
+drevoma.sk,Board,Škárovka priebežná Buk 33x650x2000 mm AB,Beech,AB,33,650,2000,2399.544,1.3,1845.8031
+drevoma.sk,Board,Škárovka cinkovaná Dub 40x650x4000 mm AB/BC,Oak,AB/BC,40,650,4000,6932.016,2.6,2666.1602
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x800 mm RUSTIC,Oak,RUSTIC,40,670,800,2291.835,0.536,4275.8115
+drevoma.sk,Board,Škárovka priebežná Dub 40x670x2000 mm RUSTIC,Oak,RUSTIC,40,670,2000,6183.1245,1.34,4614.272
+drevoma.sk,Board,Škárovka priebežná Jaseň 40x660x1800 mm AB,Ash,AB,40,660,1800,3923.1675,1.188,3302.3296
+drevoma.sk,Board,Škárovka cinkovaná Jaseň 25x800x4000 mm,Ash,,25,800,4000,5796.0,3.2,1811.25
+drevoma.sk,Board,Škárovka priebežná Buk 33x650x2400 mm AB,Beech,AB,33,650,2400,2879.4045,1.56,1845.7722
+drevoma.sk,Board,Škárovka priebežná Buk 33x650x2500 mm AB,Beech,AB,33,650,2500,2999.43,1.625,1845.803
+drevoma.sk,Board,Škárovka cinkovaná Orech americký 38x650x4000 mm,Walnut,,38,650,4000,10307.703,2.6,3964.5015
+drevoma.sk,Board,Škárovka cinkovaná Dub 45x700x5000 mm RUSTIC,Oak,RUSTIC,45,700,5000,11410.875,3.5,3260.25
+drevoma.sk,Plywood,Preglejka stolárska Buk 18x1250x2500 mm BB/CP,Beech,BB/CP,18,1250,2500,3079.125,3.125,985.32
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Breza 12x1500x3000 mm,Birch,,12,1500,3000,3468.906,4.5,770.868
+drevoma.sk,Plywood,Preglejka stolárska Breza vodovzdorne lepená 9x1250x2500 mm BB/CP,Birch,BB/CP,9,1250,2500,1539.5625,3.125,492.66
+drevoma.sk,Plywood,Preglejka vodovzdorná / hladká Topoľ 18x1250x2500mm,Poplar,,18,1250,2500,2354.625,3.125,753.48
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Breza 24x1250x2500 mm,Birch,,24,1250,2500,4229.3896,3.125,1353.4047
+drevoma.sk,Plywood,Preglejka stolárska Breza vodovzdorne lepená 18x1250x2500 mm CP/C,Birch,CP/C,18,1250,2500,2531.1614,3.125,809.9716
+drevoma.sk,Plywood,Preglejka stolárska Breza 8x1525x1525 mm BB/BB,Birch,BB/BB,8,1525,1525,1085.0594,2.325625,466.56683
+drevoma.sk,Plywood,Preglejka stolárska Breza vodovzdorne lepená 15x1220x2500 mm BB/BB,Birch,BB/BB,15,1220,2500,2165.5305,3.05,710.01
+drevoma.sk,Plywood,Preglejka stolárska Topoľ  4x1220x2520 mm AB/BB,Poplar,AB/BB,4,1220,2520,975.9015,3.0744002,317.42825
+drevoma.sk,Plywood,Preglejka stolárska Topoľ  3x1220x2520 mm AB/BB,Poplar,AB/BB,3,1220,2520,775.9395,3.0744002,252.38728
+drevoma.sk,Plywood,"Preglejka stolárska Buk 3,5x1250x2500 mm BB/CP",Beech,BB/CP,5,1250,2500,955.374,3.125,305.7197
+drevoma.sk,Plywood,Preglejka stolárska Buk/Eukalyptus 8x1250x2500 mm B/BB,Buk/Eukalyptus,B/BB,8,1250,2500,1005.3645,3.125,321.71664
+drevoma.sk,Plywood,Preglejka stolárska Breza vodovzdorne lepená 21x1250x2500 mm BB/CP,Birch,BB/CP,21,1250,2500,3595.4521,3.125,1150.5447
+drevoma.sk,Plywood,Preglejka stolárska Breza vodovzdorne lepená 15x1250x2500 mm BB/CP,Birch,BB/CP,15,1250,2500,2400.0269,3.125,768.0086
+drevoma.sk,Plywood,Preglejka vodovzdorná / hladká Topoľ 15x1250x2500mm,Poplar,,15,1250,2500,1992.375,3.125,637.56
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Breza 30x1500x3000mm,Birch,,30,1500,3000,8215.83,4.5,1825.74
+drevoma.sk,Plywood,Preglejka stolárska Breza 4x1525x1525 mm B/BB,Birch,B/BB,4,1525,1525,775.21497,2.325625,333.33618
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Breza 18x1250x2500 mm,Birch,,18,1250,2500,3015.8518,3.125,965.0726
+drevoma.sk,Plywood,Preglejka Ceiba flexi 7x1220x2500 mm,flexi,,7,1220,2500,1169.5845,3.05,383.47034
+drevoma.sk,Plywood,"Preglejka stolárska Breza vodovzdorne lepená 6,5x1250x2500 mm BB/CP",Birch,BB/CP,5,1250,2500,1195.4249,3.125,382.53598
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Topoľ 12x1250x2500 mm,Poplar,,12,1250,2500,1910.9894,3.125,611.5166
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Topoľ 18x1250x2500 mm,Poplar,,18,1250,2500,2439.15,3.125,780.52795
+drevoma.sk,Plywood,Preglejka stolárska Buk 5x1250x2500 mm BB/CP,Beech,BB/CP,5,1250,2500,1027.824,3.125,328.9037
+drevoma.sk,Plywood,Preglejka stolárska Buk/Eukalyptus 4x1250x2500 mm B/BB,Buk/Eukalyptus,B/BB,4,1250,2500,679.3395,3.125,217.38863
+drevoma.sk,Plywood,Preglejka stolárska Buk 4x1250x2500 mm BB/CP,Beech,BB/CP,4,1250,2500,996.1875,3.125,318.78
+drevoma.sk,Plywood,Preglejka stolárska Breza vodovzdorne lepená 18x1250x2500 mm BB/CP,Birch,BB/CP,18,1250,2500,2716.875,3.125,869.4
+drevoma.sk,BETONPLEX,BETONPLEX F/F Eukalyptus 21x1250x2500mm,Eukalyptus,,21,1250,2500,2799.951,3.125,895.9843
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Breza 27x1500x3000mm,Birch,,27,1500,3000,6781.32,4.5,1506.96
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Breza 27x1250x2500mm,Birch,,27,1250,2500,4758.999,3.125,1522.8796
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Breza 21x1250x2500 mm,Birch,,21,1250,2500,3513.825,3.125,1124.424
+drevoma.sk,Plywood,"Preglejka dýhovaná Dub/Meranti 3,6x1220x2440 mm A",Dub/Meranti,A,6,1220,2440,675.717,2.9768,226.99442
+drevoma.sk,Plywood,Preglejka stolárska Breza 8x1525x1525 mm B/BB,Birch,B/BB,8,1525,1525,1145.6759,2.325625,492.6314
+drevoma.sk,Plywood,Preglejka stolárska Topoľ  8x1220x2520 mm AB/BB,Poplar,AB/BB,8,1220,2520,1371.9615,3.0744002,446.25342
+drevoma.sk,Plywood,Preglejka vodovzdorná / hladká Topoľ 21x1250x2500mm,Poplar,,21,1250,2500,2798.502,3.125,895.5206
+drevoma.sk,Plywood,Preglejka stolárska Topoľ  3x1720x2520 mm AB/BB,Poplar,AB/BB,3,1720,2520,1093.7535,4.3343997,252.34256
+drevoma.sk,Plywood,Preglejka stolárska Buk 15x1250x2500 mm BB/CP,Beech,BB/CP,15,1250,2500,2635.4895,3.125,843.3566
+drevoma.sk,Plywood,Preglejka stolárska Buk 10x1250x2500 mm BB/CP,Beech,BB/CP,10,1250,2500,1829.3624,3.125,585.396
+drevoma.sk,Plywood,Preglejka stolárska Borovica 18x1250x2500 mm AB,Pine,AB,18,1250,2500,3033.9644,3.125,970.8686
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Breza 30x1250x2500mm,Birch,,30,1250,2500,5931.9644,3.125,1898.2286
+drevoma.sk,Plywood,Preglejka stolárska Topoľ  5x1220x2520 mm AB/BB 5-vrstvová,Poplar,AB/BB 5-vrstvová,5,1220,2520,1239.1365,3.0744002,403.04984
+drevoma.sk,Plywood,Preglejka priemyselná Borovica vodovzdorne lepená 18x1250x2500 mm lll/lll,Pine,lll/lll,18,1250,2500,1584.9644,3.125,507.1886
+drevoma.sk,Plywood,Preglejka stolárska Breza vodovzdorne lepená 15x1250x2500 mm BB/BB,Birch,BB/BB,15,1250,2500,2400.0269,3.125,768.0086
+drevoma.sk,Plywood,Preglejka stolárska Buk/Eukalyptus 6x1250x2500 mm B/BB,Buk/Eukalyptus,B/BB,6,1250,2500,824.2395,3.125,263.75665
+drevoma.sk,Plywood,Preglejka stolárska Breza vodovzdorne lepená 9x1250x2500 mm BB/BB,Birch,BB/BB,9,1250,2500,1589.3114,3.125,508.57965
+drevoma.sk,Plywood,"Preglejka dýhovaná Dub/Balans 3,6x1220x2440 mm A/BB",Dub/Balans,A/BB,6,1220,2440,1091.3385,2.9768,366.61465
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Topoľ 10x1250x2500 mm,Poplar,,10,1250,2500,1775.025,3.125,568.008
+drevoma.sk,Plywood,Preglejka stolárska Buk/Eukalyptus 12x1250x2500 mm B/BB,Buk/Eukalyptus,B/BB,12,1250,2500,2046.7125,3.125,654.948
+drevoma.sk,Plywood,Preglejka stolárska Breza vodovzdorne lepená 12x1250x2500 mm BB/CP,Birch,BB/CP,12,1250,2500,2055.8894,3.125,657.8846
+drevoma.sk,Plywood,Preglejka vodovzdorná / hladká Topoľ 12x1250x2500mm,Poplar,,12,1250,2500,1847.475,3.125,591.192
+drevoma.sk,Plywood,Preglejka priemyselná Borovica vodovzdorne lepená 21x1250x2500 mm lll/lll,Pine,lll/lll,21,1250,2500,1811.25,3.125,579.6
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Breza 18x1500x3000 mm,Birch,,18,1500,3000,4694.76,4.5,1043.2799
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Breza 12x1250x2500 mm,Birch,,12,1250,2500,2191.6125,3.125,701.31604
+drevoma.sk,Plywood,Preglejka stolárska Smrek 18x1250x2500 mm AB,Spruce,AB,18,1250,2500,2996.0488,3.125,958.7356
+drevoma.sk,Plywood,Preglejka stolárska Buk 12x1250x2500 mm BB/CP,Beech,BB/CP,12,1250,2500,2218.9019,3.125,710.0486
+drevoma.sk,Plywood,Preglejka stolárska Buk 8x1250x2500 mm BB/CP,Beech,BB/CP,8,1250,2500,1507.9259,3.125,482.5363
+drevoma.sk,Plywood,Preglejka stolárska Buk 6x1250x2500 mm BB/CP,Beech,BB/CP,6,1250,2500,1299.5115,3.125,415.84366
+drevoma.sk,Plywood,Preglejka stolárska Buk/Eukalyptus 5x1250x2500 mm B/BB,Buk/Eukalyptus,B/BB,5,1250,2500,751.7895,3.125,240.57263
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Topoľ 15x1250x2500 mm,Poplar,,15,1250,2500,2182.677,3.125,698.45667
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Breza 15x1500x3000 mm,Birch,,15,1500,3000,4107.915,4.5,912.87
+drevoma.sk,Plywood,Preglejka vodovzdorná / protišmyková Breza 15x1250x2500 mm,Birch,,15,1250,2500,2617.377,3.125,837.5606
+drevoma.sk,Plywood,Preglejka stolárska Buk/Eukalyptus 10x1250x2500 mm B/BB,Buk/Eukalyptus,B/BB,10,1250,2500,1240.827,3.125,397.06464
