@@ -3,8 +3,6 @@ mod currency;
 
 use std::path::Path;
 use sellers::*;
-use tabled::Table;
-use anyhow::Result;
 
 fn to_csv(items: &Vec<Material>, file_path: &str) -> anyhow::Result<()> {
     let mut wtr = csv::WriterBuilder::new()
@@ -19,7 +17,7 @@ fn to_csv(items: &Vec<Material>, file_path: &str) -> anyhow::Result<()> {
     Ok(())
 }
 
-fn crawl_all_separate() -> anyhow::Result<()> {
+pub fn crawl_all_separate() -> anyhow::Result<()> {
     let sellers: Vec<(&str, Box<dyn WoodSeller>)> = vec![
         ("p-ronic.csv", Box::new(PRonicWoodSeller::new())),
         ("madero.csv", Box::new(MaderoWoodSeller::new())),
@@ -35,7 +33,7 @@ fn crawl_all_separate() -> anyhow::Result<()> {
     Ok(())
 }
 
-fn crawl_all_together() -> anyhow::Result<()> {
+pub fn crawl_all_together() -> anyhow::Result<Vec<Material>> {
     let sellers: Vec<Box<dyn WoodSeller>> = vec![
         Box::new(PRonicWoodSeller::new()),
         Box::new(MaderoWoodSeller::new()),
@@ -50,19 +48,7 @@ fn crawl_all_together() -> anyhow::Result<()> {
         })
         .collect();
 
-    to_csv(&master_materials, "master.csv")?;
+    // to_csv(&master_materials, "master.csv")?;
 
-    Ok(())
-}
-
-// #[tokio::main]
-fn main() -> anyhow::Result<()> {
-    // let seller = DrevomaWoodSeller::new();
-    // let materials = seller.fetch()?;
-    // let table = Table::new(materials);
-    // println!("{}", table);
-    // 
-    crawl_all_together()?;
-
-    Ok(())
+    Ok(master_materials)
 }
