@@ -1,5 +1,6 @@
 use anyhow::Result;
-use super::material::*;
+use async_trait::async_trait;
+use wood_survey_types::material::*;
 use super::WoodSeller;
 use super::scraper_extensions::*;
 use regex::Regex;
@@ -12,6 +13,7 @@ impl DrevomaWoodSeller {
     }
 }
 
+#[async_trait]
 impl WoodSeller for DrevomaWoodSeller {
     fn name(&self) -> String {
         "drevoma.sk".to_owned()
@@ -25,11 +27,11 @@ impl WoodSeller for DrevomaWoodSeller {
         ])
     }
 
-    fn fetch_page(&self, url: &str) -> Result<Vec<Material>> {
+    async fn fetch_page(&self, url: &str) -> Result<Vec<Material>> {
         let currency = crate::currency::Currency::new();
         
-        let response = reqwest::blocking::get(url)?;
-        let text = response.text()?;
+        let response = reqwest::get(url).await?;
+        let text = response.text().await?;
         
         let document = scraper::Html::parse_document(&text);
 

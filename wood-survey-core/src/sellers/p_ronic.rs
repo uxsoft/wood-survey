@@ -1,5 +1,6 @@
 use anyhow::Result;
-use super::material::*;
+use async_trait::async_trait;
+use wood_survey_types::material::*;
 use super::WoodSeller;
 
 pub struct PRonicWoodSeller;
@@ -10,6 +11,7 @@ impl PRonicWoodSeller {
     }
 }
 
+#[async_trait]
 impl WoodSeller for PRonicWoodSeller {
     fn name(&self) -> String {
         "p-ronic.cz".to_owned()
@@ -25,10 +27,10 @@ impl WoodSeller for PRonicWoodSeller {
         ])
     }
 
-    fn fetch_page(&self, url: &str) -> Result<Vec<Material>> {
+    async fn fetch_page(&self, url: &str) -> Result<Vec<Material>> {
 
-        let response = reqwest::blocking::get(url)?;
-        let text = response.text()?;
+        let response = reqwest::get(url).await?;
+        let text = response.text().await?;
 
         let document = scraper::Html::parse_document(&text);
 

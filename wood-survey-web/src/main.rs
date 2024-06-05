@@ -1,65 +1,42 @@
-#![allow(non_snake_case)]
+mod server;
+mod client;
+mod error_template;
 
-use dioxus::prelude::*;
-use log::LevelFilter;
+#[cfg(feature = "ssr")]
+#[tokio::main]
+async fn main() {
+    use axum::Router;
+    use leptos::*;
+    use leptos_axum::{generate_route_list, LeptosRoutes};
+    use wood_survey_web::client::app::*;
+    use wood_survey_web::fileserv::file_and_error_handler;
 
-#[derive(Clone, Routable, Debug, PartialEq)]
-enum Route {
-    #[route("/")]
-    Home {},
-    #[route("/blog/:id")]
-    Blog { id: i32 },
+    // Setting get_configuration(None) means we'll be using cargo-leptos's env values
+    // For deployment these variables are:
+    // <https://github.com/leptos-rs/start-axum#executing-a-server-on-a-remote-machine-without-the-toolchain>
+    // Alternately a file can be specified such as Some("Cargo.toml")
+    // The file would need to be included with the executable when moved to deployment
+    let conf = get_configuration(None).await.unwrap();
+    let leptos_options = conf.leptos_options;
+    let addr = leptos_options.site_addr;
+    let routes = generate_route_list(App);
+
+    // build our application with a route
+    let app = Router::new()
+        .leptos_routes(&leptos_options, routes, App)
+        .fallback(file_and_error_handler)
+        .with_state(leptos_options);
+
+    let listener = tokio::net::TcpListener::bind(&addr).await.unwrap();
+    logging::log!("listening on http://{}", &addr);
+    axum::serve(listener, app.into_make_service())
+        .await
+        .unwrap();
 }
 
-fn main() {
-    // Init debug
-    dioxus_logger::init(LevelFilter::Info).expect("failed to init logger");
-    console_error_panic_hook::set_once();
-
-    launch(App);
-}
-
-fn App() -> Element {
-    rsx! {
-        Router::<Route> {}
-    }
-}
-
-#[component]
-fn Blog(id: i32) -> Element {
-    rsx! {
-        Link { 
-            class: "link link-primary",
-            to: Route::Home {}, 
-            "Go to counter" 
-        }
-        "Blog post {id}"
-    }
-}
-
-#[component]
-fn Home() -> Element {
-    let mut count = use_signal(|| 0);
-
-    rsx! {
-        Link {
-            class: "link link-primary",
-            to: Route::Blog {
-                id: count()
-            },
-            "Go to blog"
-        }
-        div {
-            class: "gap-1",
-            h1 { "High-Five counter: {count}" }
-            button { 
-                class: "btn",
-                onclick: move |_| count += 1, "Up high!" 
-            }
-            button { 
-                class: "btn",
-                onclick: move |_| count -= 1, "Down low!" 
-            }
-        }
-    }
+#[cfg(not(feature = "ssr"))]
+pub fn main() {
+    // no client-side main function
+    // unless we want this to work with e.g., Trunk for a purely client-side app
+    // see lib.rs for hydration function instead
 }
