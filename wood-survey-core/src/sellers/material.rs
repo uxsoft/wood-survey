@@ -1,5 +1,4 @@
 use std::fmt::Formatter;
-use tabled::Tabled;
 use serde::Serialize;
 
 #[derive(Serialize, Clone)]
@@ -56,7 +55,7 @@ impl std::fmt::Display for WoodType {
     }
 }
 
-#[derive(Tabled, Serialize, Clone)]
+#[derive(Serialize, Clone)]
 pub struct Material {
     pub seller: String,
     pub kind: WoodType,

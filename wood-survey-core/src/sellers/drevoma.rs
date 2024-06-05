@@ -25,11 +25,11 @@ impl WoodSeller for DrevomaWoodSeller {
         ])
     }
 
-    fn fetch_page(&self, url: &str) -> Result<Vec<Material>> {
+    async fn fetch_page(&self, url: &str) -> Result<Vec<Material>> {
         let currency = crate::currency::Currency::new();
         
-        let response = reqwest::blocking::get(url)?;
-        let text = response.text()?;
+        let response = reqwest::get(url).await?;
+        let text = response.text().await?;
         
         let document = scraper::Html::parse_document(&text);
 

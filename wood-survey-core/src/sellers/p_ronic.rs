@@ -25,10 +25,10 @@ impl WoodSeller for PRonicWoodSeller {
         ])
     }
 
-    fn fetch_page(&self, url: &str) -> Result<Vec<Material>> {
+    async fn fetch_page(&self, url: &str) -> Result<Vec<Material>> {
 
         let response = reqwest::get(url).await?;
-        let text = response.text()?;
+        let text = response.text().await?;
 
         let document = scraper::Html::parse_document(&text);
 

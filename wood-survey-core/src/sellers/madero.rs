@@ -66,9 +66,9 @@ impl WoodSeller for MaderoWoodSeller {
         ])
     }
 
-    fn fetch_page(&self, url: &str) -> Result<Vec<Material>> {
-        let response = reqwest::blocking::get(url)?;
-        let text = response.text()?;
+    async fn fetch_page(&self, url: &str) -> Result<Vec<Material>> {
+        let response = reqwest::get(url).await?;
+        let text = response.text().await?;
 
         let document = scraper::Html::parse_document(&text);
         let page_count = document
@@ -85,13 +85,14 @@ impl WoodSeller for MaderoWoodSeller {
             for i in 2..page_count {
                 let params = [("page", "2"), ("category", "sparovka-prubezna"), ("thickFrom", ""), ("thickTo", ""), ("widthFrom", ""), ("widthTo", ""), ("lengthFrom", ""), ("lengthTo", "")];
 
-                let client = reqwest::blocking::Client::new();
+                let client = reqwest::Client::new();
                 let res = client.post("https://madero.eu/cz/load-more")
                     .form(&params)
                     .send()
+                    .await
                     .unwrap();
 
-                let text = res.text().unwrap();
+                let text = res.text().await.unwrap();
                 let doc = scraper::Html::parse_document(&text);
 
                 master.push(parse_doc(doc, quality.clone())?);

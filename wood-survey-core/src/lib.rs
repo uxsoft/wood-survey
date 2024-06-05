@@ -33,22 +33,33 @@ pub fn crawl_all_separate() -> anyhow::Result<()> {
     Ok(())
 }
 
-pub fn crawl_all_together() -> anyhow::Result<Vec<Material>> {
-    let sellers: Vec<Box<dyn WoodSeller>> = vec![
-        Box::new(PRonicWoodSeller::new()),
-        Box::new(MaderoWoodSeller::new()),
-        Box::new(DrevomaWoodSeller::new())
-    ];
+pub async fn fetch_all() -> anyhow::Result<Vec<Material>> {
+    // let sellers: Vec<Box<dyn WoodSeller>> = vec![
+    //     Box::new(PRonicWoodSeller::new()),
+    //     Box::new(MaderoWoodSeller::new()),
+    //     Box::new(DrevomaWoodSeller::new())
+    // ];
 
-    let master_materials: Vec<Material> = sellers
-        .iter()
-        .flat_map(|seller| {
-            let materials = seller.fetch().unwrap();
-            materials
-        })
-        .collect();
+    // let master_materials: Vec<Material> = sellers
+    //     .iter()
+    //     .flat_map(|seller| {
+    //         let materials = seller.fetch().unwrap();
+    //         materials
+    //     })
+    //     .collect();
 
     // to_csv(&master_materials, "master.csv")?;
+
+    let sellers = vec![
+
+    ];
+
+    futures::future::join_all(vec![
+        PRonicWoodSeller::new().fetch(),
+        MaderoWoodSeller::new().fetch(),
+        DrevomaWoodSeller::new().fetch()
+    ]).await;
+
 
     Ok(master_materials)
 }
