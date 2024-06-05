@@ -1,5 +1,6 @@
 mod server;
 mod client;
+mod error_template;
 
 #[cfg(feature = "ssr")]
 #[tokio::main]
@@ -7,7 +8,7 @@ async fn main() {
     use axum::Router;
     use leptos::*;
     use leptos_axum::{generate_route_list, LeptosRoutes};
-    use wood_survey_web::app::*;
+    use wood_survey_web::client::app::*;
     use wood_survey_web::fileserv::file_and_error_handler;
 
     // Setting get_configuration(None) means we'll be using cargo-leptos's env values

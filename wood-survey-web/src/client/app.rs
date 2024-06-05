@@ -1,8 +1,8 @@
-use crate::error_template::{AppError, ErrorTemplate};
 use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
-use crate::server::*;
+use crate::client::home::*;
+use crate::error_template::{AppError, ErrorTemplate};
 
 #[component]
 pub fn App() -> impl IntoView {
@@ -37,24 +37,3 @@ pub fn App() -> impl IntoView {
     }
 }
 
-/// Renders the home page of your application.
-#[component]
-fn HomePage() -> impl IntoView {
-    // let fetch_data_action = create_server_action::<FetchData>();
-    let (data, set_data) = create_signal(vec![]);
-
-    let on_click = move |_| {
-        spawn_local(async move {
-            let result = fetch_data().await;
-            set_data.set(result.unwrap());
-        })
-    };
-
-    view! {
-        <h1>"Welcome to Leptos!"</h1>
-        <button on:click=on_click>"Fetch"</button>
-        <div>
-            {move || format!("{:?}", data.get())}
-        </div>
-    }
-}
