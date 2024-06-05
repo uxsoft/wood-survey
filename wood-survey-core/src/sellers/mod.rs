@@ -1,4 +1,3 @@
-mod material;
 mod p_ronic;
 mod madero;
 mod drevoma;
@@ -6,11 +5,11 @@ mod scraper_extensions;
 
 use anyhow::Result;
 use async_trait::async_trait;
-pub use material::*;
+use wood_survey_types::material::*;
+use futures::future::join_all;
 pub use p_ronic::PRonicWoodSeller;
 pub use madero::MaderoWoodSeller;
 pub use drevoma::DrevomaWoodSeller;
-use futures::future::join_all;
 
 #[async_trait]
 pub trait WoodSeller {

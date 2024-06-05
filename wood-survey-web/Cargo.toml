@@ -20,6 +20,7 @@ wasm-bindgen = "=0.2.92"
 thiserror = "1"
 tracing = { version = "0.1", optional = true }
 http = "1"
+wood-survey-types = { path = "../wood-survey-types"}
 wood-survey-core = { path = "../wood-survey-core", optional = true}
 
 [features]

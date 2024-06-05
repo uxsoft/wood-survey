@@ -1,6 +1,6 @@
 use anyhow::Result;
 use async_trait::async_trait;
-use super::material::*;
+use wood_survey_types::material::*;
 use super::WoodSeller;
 use super::scraper_extensions::*;
 use regex::Regex;

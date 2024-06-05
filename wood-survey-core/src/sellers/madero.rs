@@ -1,9 +1,8 @@
 use anyhow::Result;
 use async_trait::async_trait;
-use futures::StreamExt;
-use super::scraper_extensions::*;
 use scraper::Selector;
-use super::material::*;
+use wood_survey_types::material::*;
+use super::scraper_extensions::*;
 use super::WoodSeller;
 
 pub struct MaderoWoodSeller;

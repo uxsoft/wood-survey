@@ -1,6 +1,6 @@
 mod sellers;
 mod currency;
-
+use wood_survey_types::material::*;
 use itertools::Itertools;
 use sellers::*;
 
@@ -12,21 +12,21 @@ pub fn get_sellers() -> Vec<Box<dyn WoodSeller>> {
     ]
 }
 
-pub fn to_csv(items: &Vec<Material>, file_path: &str) -> Result<(), String> {
-    let mut wtr = csv::WriterBuilder::new()
-        // .delimiter(b';')
-        .from_path(file_path)
-        .map_err(|e| e.to_string())?;
+// pub fn to_csv(items: &Vec<Material>, file_path: &str) -> Result<(), String> {
+//     let mut wtr = csv::WriterBuilder::new()
+//         // .delimiter(b';')
+//         .from_path(file_path)
+//         .map_err(|e| e.to_string())?;
 
-    for item in items {
-        wtr.serialize(item)
-            .map_err(|e| e.to_string())?;
-    }
+//     for item in items {
+//         wtr.serialize(item)
+//             .map_err(|e| e.to_string())?;
+//     }
 
-    wtr.flush()
-        .map_err(|e| e.to_string())?;
-    Ok(())
-}
+//     wtr.flush()
+//         .map_err(|e| e.to_string())?;
+//     Ok(())
+// }
 
 // pub async fn fetch_all() -> Result<Vec<Material>, String> {
 //     let sellers = get_sellers();

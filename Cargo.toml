@@ -2,6 +2,7 @@
 resolver = "2"
 
 members = [
-    "wood-survey-core",
+    "wood-survey-types",
+    "wood-survey-core", 
     "wood-survey-web",
 ]

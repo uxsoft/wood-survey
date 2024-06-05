@@ -1,7 +1,7 @@
 use std::fmt::Formatter;
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 
-#[derive(Serialize, Clone)]
+#[derive(Serialize, Deserialize, Clone, Debug)]
 pub enum WoodSpecies {
     Oak,
     Beech,
@@ -32,7 +32,7 @@ impl std::fmt::Display for WoodSpecies {
     }
 }
 
-#[derive(Serialize, Clone)]
+#[derive(Serialize, Deserialize, Clone, Debug)]
 pub enum WoodType {
     Board,
     Plywood,
@@ -55,7 +55,7 @@ impl std::fmt::Display for WoodType {
     }
 }
 
-#[derive(Serialize, Clone)]
+#[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct Material {
     pub seller: String,
     pub kind: WoodType,
