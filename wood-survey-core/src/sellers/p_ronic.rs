@@ -1,4 +1,5 @@
 use anyhow::Result;
+use async_trait::async_trait;
 use super::material::*;
 use super::WoodSeller;
 
@@ -10,6 +11,7 @@ impl PRonicWoodSeller {
     }
 }
 
+#[async_trait(?Send)]
 impl WoodSeller for PRonicWoodSeller {
     fn name(&self) -> String {
         "p-ronic.cz".to_owned()

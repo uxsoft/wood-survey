@@ -1,4 +1,5 @@
 use anyhow::Result;
+use async_trait::async_trait;
 use super::material::*;
 use super::WoodSeller;
 use super::scraper_extensions::*;
@@ -12,6 +13,7 @@ impl DrevomaWoodSeller {
     }
 }
 
+#[async_trait(?Send)]
 impl WoodSeller for DrevomaWoodSeller {
     fn name(&self) -> String {
         "drevoma.sk".to_owned()

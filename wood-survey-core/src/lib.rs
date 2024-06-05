@@ -1,10 +1,18 @@
 mod sellers;
 mod currency;
 
-use std::path::Path;
+use itertools::Itertools;
 use sellers::*;
 
-fn to_csv(items: &Vec<Material>, file_path: &str) -> anyhow::Result<()> {
+pub fn get_sellers() -> Vec<Box<dyn WoodSeller>> {
+    vec![
+        Box::new(PRonicWoodSeller::new()),
+        Box::new(MaderoWoodSeller::new()),
+        Box::new(DrevomaWoodSeller::new())
+    ]
+}
+
+pub fn to_csv(items: &Vec<Material>, file_path: &str) -> anyhow::Result<()> {
     let mut wtr = csv::WriterBuilder::new()
         // .delimiter(b';')
         .from_path(file_path)?;
@@ -17,49 +25,14 @@ fn to_csv(items: &Vec<Material>, file_path: &str) -> anyhow::Result<()> {
     Ok(())
 }
 
-pub fn crawl_all_separate() -> anyhow::Result<()> {
-    let sellers: Vec<(&str, Box<dyn WoodSeller>)> = vec![
-        ("p-ronic.csv", Box::new(PRonicWoodSeller::new())),
-        ("madero.csv", Box::new(MaderoWoodSeller::new())),
-    ];
-
-    for (seller_path, seller_module) in sellers {
-        if Path::new(seller_path).exists() {
-            let materials = seller_module.fetch()?;
-            to_csv(&materials, seller_path)?;
-        }
-    }
-
-    Ok(())
-}
-
 pub async fn fetch_all() -> anyhow::Result<Vec<Material>> {
-    // let sellers: Vec<Box<dyn WoodSeller>> = vec![
-    //     Box::new(PRonicWoodSeller::new()),
-    //     Box::new(MaderoWoodSeller::new()),
-    //     Box::new(DrevomaWoodSeller::new())
-    // ];
+    let sellers = get_sellers();
 
-    // let master_materials: Vec<Material> = sellers
-    //     .iter()
-    //     .flat_map(|seller| {
-    //         let materials = seller.fetch().unwrap();
-    //         materials
-    //     })
-    //     .collect();
+    let futures = sellers.iter().map(|s| s.fetch());
 
-    // to_csv(&master_materials, "master.csv")?;
+    let results = futures::future::join_all(futures).await;
 
-    let sellers = vec![
+    let big_list = results.into_iter().flatten_ok().flatten().collect();
 
-    ];
-
-    futures::future::join_all(vec![
-        PRonicWoodSeller::new().fetch(),
-        MaderoWoodSeller::new().fetch(),
-        DrevomaWoodSeller::new().fetch()
-    ]).await;
-
-
-    Ok(master_materials)
+    Ok(big_list)
 }

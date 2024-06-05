@@ -5,13 +5,14 @@ mod drevoma;
 mod scraper_extensions;
 
 use anyhow::Result;
+use async_trait::async_trait;
 pub use material::*;
 pub use p_ronic::PRonicWoodSeller;
 pub use madero::MaderoWoodSeller;
 pub use drevoma::DrevomaWoodSeller;
-pub use super::currency::*;
 use futures::future::join_all;
 
+#[async_trait(?Send)]
 pub trait WoodSeller {
     fn name(&self) -> String;
     fn pages(&self) -> Result<Vec<String>>;

@@ -1,4 +1,5 @@
 use anyhow::Result;
+use async_trait::async_trait;
 use super::scraper_extensions::*;
 use scraper::Selector;
 use super::material::*;
@@ -54,6 +55,7 @@ fn parse_doc(document: scraper::Html, quality: String) -> Result<Vec<Material>> 
     return Ok(materials);
 }
 
+#[async_trait(?Send)]
 impl WoodSeller for MaderoWoodSeller {
     fn name(&self) -> String {
         "madero.eu".to_owned()
