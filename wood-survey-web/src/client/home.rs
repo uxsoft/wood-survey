@@ -5,24 +5,19 @@ use crate::server::*;
 
 #[component]
 pub fn HomePage() -> impl IntoView {
-    // let fetch_data_action = create_server_action::<FetchData>();
     let (data, set_data) = create_signal(vec![]);
 
-    let on_click = move |_| {
+    create_effect(move |_|{
         spawn_local(async move {
             let result = fetch_data().await;
             set_data.set(result.unwrap());
-        })
-    };
+        });
+    });
 
     view! {
-        <h1>"Welcome to Leptos!"</h1>
-        <Script src="/sorttable.js"/>
-        <button class="btn" on:click=on_click>"Fetch"</button>
-        // <div>
-        //     {move || format!("{:?}", data.get())}
-        // </div>
-        <table class="sortable table table-xs">
+        <Script src="https://cdn.jsdelivr.net/npm/table-sort-js/table-sort.min.js"/>
+        
+        <table class="table-sort table table-xs">
             <thead>
                 <th>"Seller"</th>
                 <th>"Kind"</th>
