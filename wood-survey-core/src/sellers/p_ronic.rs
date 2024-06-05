@@ -11,7 +11,7 @@ impl PRonicWoodSeller {
     }
 }
 
-#[async_trait(?Send)]
+#[async_trait]
 impl WoodSeller for PRonicWoodSeller {
     fn name(&self) -> String {
         "p-ronic.cz".to_owned()

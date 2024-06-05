@@ -12,7 +12,7 @@ pub use madero::MaderoWoodSeller;
 pub use drevoma::DrevomaWoodSeller;
 use futures::future::join_all;
 
-#[async_trait(?Send)]
+#[async_trait]
 pub trait WoodSeller {
     fn name(&self) -> String;
     fn pages(&self) -> Result<Vec<String>>;

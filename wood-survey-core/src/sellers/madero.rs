@@ -1,5 +1,6 @@
 use anyhow::Result;
 use async_trait::async_trait;
+use futures::StreamExt;
 use super::scraper_extensions::*;
 use scraper::Selector;
 use super::material::*;
@@ -55,7 +56,7 @@ fn parse_doc(document: scraper::Html, quality: String) -> Result<Vec<Material>> 
     return Ok(materials);
 }
 
-#[async_trait(?Send)]
+#[async_trait]
 impl WoodSeller for MaderoWoodSeller {
     fn name(&self) -> String {
         "madero.eu".to_owned()
@@ -83,23 +84,26 @@ impl WoodSeller for MaderoWoodSeller {
         let mut master: Vec<Vec<Material>> = vec![];
         master.push(parse_doc(document, quality.clone())?);
 
-        if page_count > 1 {
-            for i in 2..page_count {
-                let params = [("page", "2"), ("category", "sparovka-prubezna"), ("thickFrom", ""), ("thickTo", ""), ("widthFrom", ""), ("widthTo", ""), ("lengthFrom", ""), ("lengthTo", "")];
+        // if page_count > 1 {
+        //     futures::stream::iter(2..page_count).map(|_| async move {
+        //         let params = [("page", "2"), ("category", "sparovka-prubezna"), ("thickFrom", ""), ("thickTo", ""), ("widthFrom", ""), ("widthTo", ""), ("lengthFrom", ""), ("lengthTo", "")];
 
-                let client = reqwest::Client::new();
-                let res = client.post("https://madero.eu/cz/load-more")
-                    .form(&params)
-                    .send()
-                    .await
-                    .unwrap();
+        //         let client = reqwest::Client::new();
+        //         let res = client.post("https://madero.eu/cz/load-more")
+        //             .form(&params)
+        //             .send()
+        //             .await
+        //             .unwrap();
 
-                let text = res.text().await.unwrap();
-                let doc = scraper::Html::parse_document(&text);
+        //         let text = res.text().await.unwrap();
+        //         let doc = scraper::Html::parse_document(&text);
 
-                master.push(parse_doc(doc, quality.clone())?);
-            }
-        }
+        //         parse_doc(doc, quality.clone())            })
+        //     .buffer_unordered(16)
+        //     .collect::<Vec<_>>()
+        //     .await;
+
+        // }
 
         return Ok(master
             .iter()

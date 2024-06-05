@@ -13,7 +13,7 @@ impl DrevomaWoodSeller {
     }
 }
 
-#[async_trait(?Send)]
+#[async_trait]
 impl WoodSeller for DrevomaWoodSeller {
     fn name(&self) -> String {
         "drevoma.sk".to_owned()
